@@ -20,3 +20,4 @@ menu2.onclick=()=>{
     filter1[0].style.filter = 'none';
     filter4[0].style.filter = 'none';
 }
+
