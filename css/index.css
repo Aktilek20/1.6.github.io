@@ -1039,7 +1039,7 @@ textarea {
     gap: 74px;
   }
   .wrapper {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .header-button-3 {
     width: 40px;
@@ -1125,11 +1125,13 @@ textarea {
     top: 0;
     overflow-y: scroll;
     transform: translateX(-100%);
-    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
+    box-shadow: none;
   }
   .container.show3 {
+    height: 100%;
+    overflow: auto;
     transform: translateX(0%);
-    box-shadow: none;
+    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
   .container-5 {
     width: -moz-min-content;
@@ -1301,7 +1303,7 @@ textarea {
     gap: 74px;
   }
   .wrapper {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .header-button-3 {
     width: 40px;
@@ -1390,6 +1392,8 @@ textarea {
     box-shadow: none;
   }
   .container.show3 {
+    height: 100%;
+    overflow: auto;
     transform: translateX(0);
     box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
@@ -1678,7 +1682,7 @@ textarea {
     gap: 74px;
   }
   .wrapper {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .header-button-3 {
     width: 40px;
@@ -1765,12 +1769,14 @@ textarea {
     overflow-y: scroll;
     transform: translateX(-100%);
     opacity: 0;
-    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
+    box-shadow: none;
   }
   .container.show3 {
+    height: auto;
+    overflow: auto;
     opacity: 1;
     transform: translateX(0);
-    box-shadow: none;
+    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
   .container-5 {
     width: -moz-min-content;
@@ -2220,7 +2226,7 @@ textarea {
     gap: 74px;
   }
   .wrapper {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .header-button-3 {
     width: 40px;
@@ -2307,12 +2313,14 @@ textarea {
     overflow-y: scroll;
     transform: translateX(-100%);
     opacity: 0;
-    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
+    box-shadow: none;
   }
   .container.show3 {
+    height: 768px;
+    overflow: auto;
     opacity: 1;
     transform: translateX(0);
-    box-shadow: none;
+    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
   .container-5 {
     width: -moz-min-content;
@@ -2424,7 +2432,7 @@ textarea {
   .list__menu {
     -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 0px, #000 0px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent);
             mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 0px, #000 0px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent);
-    width: 110%;
+    width: 94%;
   }
   .link__hidden {
     display: none;
@@ -2540,12 +2548,14 @@ textarea {
     overflow-y: scroll;
     transform: translateX(-100%);
     opacity: 0;
-    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
+    box-shadow: none;
   }
   .container.show3 {
+    height: 100%;
+    overflow: auto;
     opacity: 1;
     transform: translateX(0);
-    box-shadow: none;
+    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
   .list__menu {
     -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 0px, #000 0px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent);
@@ -2564,7 +2574,7 @@ textarea {
   }
   .wrapper {
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
   }
   .head__left {
     gap: 16px;
@@ -2779,12 +2789,14 @@ textarea {
     overflow-y: scroll;
     transform: translateX(-100%);
     opacity: 0;
-    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
+    box-shadow: none;
   }
   .container.show3 {
     opacity: 1;
+    overflow: auto;
+    height: 100%;
     transform: translateX(0);
-    box-shadow: none;
+    box-shadow: -16px 0 52px 0 rgb(14, 24, 8);
   }
   .list__menu {
     -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 0px, #000 0px, #000 calc(100% - 18px), rgba(0, 0, 0, 0.25) calc(100% - 9px), transparent);
