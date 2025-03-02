@@ -598,6 +598,7 @@ dialog {
   justify-content: space-between;
   padding-inline: 16px;
   border: 1px solid var(--color-smoky-white-2);
+  background-color: var(--color-light);
   border-radius: 6px;
 }
 
@@ -610,6 +611,7 @@ dialog {
   padding-inline: 16px;
   border: 1px solid var(--color-smoky-white-2);
   border-radius: 6px;
+  background-color: var(--color-light);
 }
 
 .icon-5-1 {
@@ -702,6 +704,7 @@ dialog {
   grid-template-rows: repeat(1, 86px auto 0px);
   padding-block-start: 16px;
   padding-block-end: 16px;
+  background-color: var(--color-light);
 }
 
 .container-6 {
@@ -1922,7 +1925,6 @@ textarea {
   .content-3-1 {
     grid-template-columns: repeat(4, 241px);
     grid-template-rows: repeat(1, 160px);
-    background-color: var(--color-light);
   }
   .box-2 {
     grid-template-columns: repeat(1, 207px);
@@ -2326,7 +2328,6 @@ textarea {
   }
   .content-3-1 {
     grid-template-columns: repeat(3, 241px);
-    background-color: var(--color-light);
   }
   .block-6-3 {
     grid-template-columns: repeat(3, 241px);
@@ -2524,6 +2525,10 @@ textarea {
     position: absolute;
     right: 32px;
   }
+  .header__color {
+    display: grid;
+    background-color: var(--color-light);
+  }
 }
 @media (max-width: 458px) {
   .container {
@@ -2670,7 +2675,6 @@ textarea {
     padding-inline: 0px;
     -moz-column-gap: 0;
          column-gap: 0;
-    background-color: var(--color-light);
   }
   .container-7 {
     display: none;
@@ -2681,7 +2685,7 @@ textarea {
   }
   .service_block {
     display: grid;
-    grid-template-columns: repeat(6, 260px);
+    grid-template-columns: repeat(6, auto);
     padding: 0px;
     margin: 0;
     margin-inline-start: 8px;
@@ -2707,10 +2711,16 @@ textarea {
   .button-1 {
     height: 32px;
     border-radius: 16px;
-    margin-block-start: 8px;
+    margin-block-start: 10px;
   }
-  .swiper-slide {
+  .service_block_container {
+    display: grid;
+    grid-template-columns: repeat(1, 228px);
+    grid-template-rows: repeat(1, 64px);
     padding: 16px;
+    background-color: var(--color-light);
+    margin-block: 16px;
+    border-radius: 6px;
   }
   .footer-1 {
     margin-inline-start: 16px;
@@ -2742,6 +2752,16 @@ textarea {
   }
   .text-1 {
     margin-inline-start: 16px;
+  }
+  .box-2 {
+    grid-template-columns: repeat(1, 191px);
+    grid-template-rows: repeat(1, 86px auto 0);
+    padding: 16px;
+  }
+  .box-3-1-2 {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -2906,7 +2926,7 @@ textarea {
   }
   .service_block {
     display: grid;
-    grid-template-columns: repeat(6, 260px);
+    grid-template-columns: repeat(6, auto);
     padding: 0px;
     margin: 0;
     margin-inline-start: 8px;
@@ -2932,11 +2952,16 @@ textarea {
   .button-1 {
     height: 32px;
     border-radius: 16px;
-    margin-block-start: 8px;
+    margin-block-start: 10px;
   }
-  .swiper-slide {
+  .service_block_container {
+    display: grid;
+    grid-template-columns: repeat(1, 228px);
+    grid-template-rows: repeat(1, 64px);
     padding: 16px;
     background-color: var(--color-light);
+    margin-block: 16px;
+    border-radius: 6px;
   }
   .footer-1 {
     margin-inline-start: 16px;
@@ -2965,5 +2990,10 @@ textarea {
   }
   .text-1 {
     margin-inline-start: 16px;
+  }
+  .box-3-1-2 {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
