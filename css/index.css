@@ -2947,6 +2947,7 @@ textarea {
     padding-block: 12px;
     border-radius: 8px;
     font-size: 16px;
+    margin-inline: -16px;
   }
   ::-moz-placeholder {
     color: #b5b6bc;
