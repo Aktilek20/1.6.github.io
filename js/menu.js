@@ -21,3 +21,13 @@ menu2.onclick=()=>{
     filter4[0].style.filter = 'none';
 }
 
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('#menu-button') && !event.target.closest('#menu-button-2') && !event.target.closest('.container')) {
+      navbar.classList.remove('show3');
+      menu.classList.remove('clicked');
+      menu2.classList.remove('clicked1');
+      filter3[0].style.filter = 'none';
+      filter1[0].style.filter = 'none';
+      filter4[0].style.filter = 'none';
+    }
+  });
