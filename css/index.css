@@ -1455,6 +1455,10 @@ textarea {
     margin-inline-start: 0;
     margin-inline-end: 0;
   }
+  .header__color {
+    display: grid;
+    background-color: var(--color-light);
+  }
   .block-5 {
     display: flex;
     align-items: center;
@@ -1522,8 +1526,21 @@ textarea {
   .container-8 {
     display: none;
   }
+  .box-2 {
+    grid-template-columns: repeat(1, 207px);
+    grid-template-rows: repeat(1, 86px auto 0);
+    padding: 16px;
+  }
+  .btn2 {
+    margin-block: 24px 32px;
+    padding-inline-start: 32px;
+  }
 }
 @media (min-width: 1024px) {
+  .btn2 {
+    margin-block: 24px 32px;
+    padding-inline-start: 32px;
+  }
   .entryDisplay {
     position: fixed;
     top: 0;
@@ -1902,6 +1919,11 @@ textarea {
   }
   .container-8 {
     display: none;
+  }
+  .box-2 {
+    grid-template-columns: repeat(1, 207px);
+    grid-template-rows: repeat(1, 86px auto 0);
+    padding: 16px;
   }
 }
 @media (min-width: 1440px) {
