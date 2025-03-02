@@ -1226,12 +1226,13 @@ textarea {
   }
   .menu {
     width: 776px;
-    --webkit-overflow-scrolling: touch;
+    --webkit-overflow-scrolling: hidden;
     margin-inline-start: 24px;
     padding-bottom: 10px;
     margin-bottom: -10px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     overflow: hidden;
     margin-block-end: 32px;
   }
@@ -1494,12 +1495,13 @@ textarea {
   }
   .menu {
     width: 776px;
-    --webkit-overflow-scrolling: touch;
+    --webkit-overflow-scrolling: hidden;
     margin-inline-start: 24px;
     padding-bottom: 10px;
     margin-bottom: -10px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     overflow: hidden;
     margin-block-end: 32px;
   }
@@ -1888,12 +1890,13 @@ textarea {
   }
   .menu {
     width: 776px;
-    --webkit-overflow-scrolling: touch;
+    --webkit-overflow-scrolling: hidden;
     margin-inline-start: 24px;
     padding-bottom: 10px;
     margin-bottom: -10px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     overflow: hidden;
     margin-block-end: 32px;
   }
@@ -1995,6 +1998,7 @@ textarea {
     width: 100%;
   }
   .menu {
+    --webkit-scrolling-touching: hidden;
     width: 100%;
     margin-inline-start: 34px;
   }
@@ -2271,6 +2275,7 @@ textarea {
     width: 100%;
   }
   .menu {
+    --webkit-scrolling-touching: hidden;
     width: 100%;
     margin-inline-start: 34px;
   }
@@ -2718,12 +2723,13 @@ textarea {
   }
   .menu {
     width: 776px;
-    --webkit-overflow-scrolling: touch;
+    --webkit-overflow-scrolling: hidden;
     margin-inline-start: 24px;
     padding-bottom: 10px;
     margin-bottom: -10px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     overflow: hidden;
     margin-block-end: 32px;
   }
@@ -2918,10 +2924,12 @@ textarea {
     margin-block: 24px;
   }
   .menu {
+    --webkit-scrolling-touching: hidden;
     width: 320px;
     margin-inline-start: 16px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     margin-block-end: 24px;
   }
   .hidden-1 {
@@ -3160,10 +3168,12 @@ textarea {
     margin-block: 24px;
   }
   .menu {
+    --webkit-scrolling-touching: hidden;
     width: 100%;
     margin-inline-start: 16px;
   }
   .menu__wrapper {
+    --webkit-scrolling-touching: hidden;
     margin-block-end: 24px;
   }
   .hidden-1 {
