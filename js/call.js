@@ -66,6 +66,7 @@ document.addEventListener('click', (event) => {
     document.querySelectorAll('.entryDisplay1').forEach(block => {
       block.classList.remove('show1');
       block.style.display = 'none';
+      slmasmxa
     });
     
     container[0].style.filter = 'none';
