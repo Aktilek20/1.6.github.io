@@ -13,14 +13,10 @@ const swiper1 = new Swiper('#swiper-1', {
     320: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     },
     485: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     }
   },
 });
@@ -39,14 +35,10 @@ const swiper2 = new Swiper('#swiper-2', {
     320: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     },
     485: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     }
   },
 });
@@ -65,14 +57,19 @@ const swiper3 = new Swiper('#swiper-3', {
     320: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     },
     485: {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     }
   },
+});
+
+document.querySelectorAll('.swiper-container').forEach(container => {
+  container.addEventListener('focus', () => {
+    container.swiper.keyboard.enable();
+  });
+  container.addEventListener('blur', () => {
+    container.swiper.keyboard.disable();
+  });
 });
