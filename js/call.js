@@ -4,6 +4,8 @@ const entrybutton = document.querySelectorAll(".entrybutton");
 const container = document.querySelectorAll(".filter");
 const container1 = document.querySelectorAll(".filter2");
 const container4 = document.querySelectorAll(".filter3");
+import { navbar, menu, filter3, filter1, filter4, applyBlur } from './menu.js';
+
 
 const showSideMenu = () => {
   requestAnimationFrame(() => {
@@ -80,3 +82,43 @@ document.addEventListener('click', (event) => {
 
 entryButton1.forEach(element => element.addEventListener("click", showMenu));
 entrybutton1.forEach(element => element.addEventListener("click", showMenu));
+
+
+const showRightMenu = () => {
+  navbar.classList.remove('show3');
+  menu.classList.remove('clicked');
+  applyBlur('none');
+
+
+ entryDisplay1[0].classList.toggle("show");
+  if (entryDisplay1[0].classList.contains("show")) {
+    filter3[0].style.filter = 'blur(1px)';
+    filter1[0].style.filter = 'blur(1px)';
+    filter4[0].style.filter = 'blur(1px)';
+    entryDisplay1[0].style.display = 'block';
+  } else {
+    filter3[0].style.filter = 'none';
+    filter1[0].style.filter = 'none';
+    filter4[0].style.filter = 'none';
+    entryDisplay1[0].style.display = 'none';
+  }
+
+
+  entryDisplay[0].classList.toggle("show1");
+  if (entryDisplay[0].classList.contains("show1")) {
+    filter3[0].style.filter = 'blur(1px)';
+    filter1[0].style.filter = 'blur(1px)';
+    filter4[0].style.filter = 'blur(1px)';
+    entryDisplay[0].style.display = 'block';
+  } else {
+    filter3[0].style.filter = 'none';
+    filter1[0].style.filter = 'none';
+    filter4[0].style.filter = 'none';
+    entryDisplay[0].style.display = 'none';
+  }
+
+ 
+};
+
+document.querySelectorAll(".entry-button").forEach(element => element.addEventListener("click", showRightMenu));
+document.querySelectorAll(".entry__button2").forEach(element => element.addEventListener("click", showRightMenu));

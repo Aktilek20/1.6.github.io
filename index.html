@@ -20,7 +20,7 @@
                             fill="white" />
                     </svg>
                 </button>
-                <h1 class="title-1"><svg class="icon-3" width="3" height="40" viewBox="0 0 3 40" fill="none"
+                <h1 class="title-2"><svg class="icon-3" width="3" height="40" viewBox="0 0 3 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3 1.5C3 0.671574 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5V38.5C0 39.3284 0.671573 40 1.5 40C2.32843 40 3 39.3284 3 38.5V1.5Z"
@@ -35,8 +35,9 @@
                 <textarea placeholder="Сообщение"></textarea>
             </div>
             <p class="section__text">Нажимая “отправить”, вы даете согласие на <span style="color:#FF3E79">обработку
-                    <br>персональных данных</span> и соглашаетесь с нашей<br><span style="color:#FF3E79">политикой
-                    конфиденциальности</span> </p>
+                <br class="delete">персональных данных</span><br class="delete1"> и соглашаетесь с нашей<br class="delete"><span style="color:#FF3E79"> политикой
+                конфиденциальности</span> 
+            </p>
             <div class="button__section">
                 <a class="link-1" href="#!">Отправить</a>
                 <div class="icon__block">
@@ -70,7 +71,7 @@
                 <input type="tel" placeholder="Телефон">
             </div>
             <p class="section__text">Нажимая “отправить”, вы даете согласие на <span style="color:#FF3E79">обработку
-                    <br>персональных данных</span> и соглашаетесь с нашей<br><span style="color:#FF3E79">политикой
+                    <br class="delete">персональных данных<br class="delete1"></span> и соглашаетесь с нашей<br class="delete"><span style="color:#FF3E79"> политикой
                     конфиденциальности</span> </p>
             <div class="button__section">
                 <div><a class="link-1" href="#!">Отправить</a></div>
@@ -227,14 +228,14 @@
                                     fill="#fff" />
                             </svg>
                         </button>
-                        <button class="header-button  entry__button2" type="button" onclick="doAction(event)">
+                        <button class="header-button  entry__button2" type="button">
                             <svg class="icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M18 0H2C.9 0 .01.9.01 2L0 20l4-5h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm-7 11H5c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1Zm4-5H5c-.55 0-1-.45-1-1s.45-1 1-1h10c.55 0 1 .45 1 1s-.45 1-1 1Z"
                                     fill="#fff" />
                             </svg>
                         </button>
-                        <button class="header-button" type="button" onclick="doAction(event)">
+                        <button class="header-button" type="button">
                             <svg class="icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM.017 16.612C-.113 17.342.535 18 1.339 18H18.66c.83 0 1.453-.659 1.323-1.388C19.23 12.4 15.056 10 10 10 4.943 10 .769 12.4.017 16.612Z"
@@ -1146,8 +1147,7 @@
                 }
             }
         </script>
-        <script src="js/menu.js"></script>
-        <script src="js/call.js"></script>
+        <script type="module" src="./js/main.js"></script>
         <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>
 </body>
