@@ -600,7 +600,7 @@ button {
   display: none;
   grid-template-columns: repeat(3, 240px);
   grid-template-rows: repeat(1, 72px);
-  -moz-column-gap: 32px;
+  --moz-column-gap: 32px;
   column-gap: 32px;
   margin-inline-start: 32px;
   margin-block-start: 16px;
@@ -904,6 +904,8 @@ button {
 .entryDisplay.show {
   opacity: 1;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   height: 100vh;
 }
 
@@ -995,6 +997,8 @@ input {
   opacity: 1;
   height: 100vh;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .input-1 {
