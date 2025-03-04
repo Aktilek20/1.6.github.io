@@ -53,8 +53,25 @@ const showMenu = () => {
   });
 };
 
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.entryDisplay') && !event.target.closest('.entryDisplay1') && !event.target.closest('.entry-button') && !event.target.closest('.entry__button2')) {
+    document.querySelectorAll('.entryDisplay').forEach(block => {
+    block.classList.remove('show');
+    block.style.display = 'none';
+    filter3.forEach(filter => filter.style.filter = 'none');
+    filter1.forEach(filter => filter.style.filter = 'none');
+    filter4.forEach(filter => filter.style.filter = 'none');
+    });
 
-
+    document.querySelectorAll('.entryDisplay1').forEach(block => {
+      block.classList.remove('show1');
+      block.style.display = 'none';
+      filter3.forEach(filter => filter.style.filter = 'none');
+      filter1.forEach(filter => filter.style.filter = 'none');
+      filter4.forEach(filter => filter.style.filter = 'none');
+    });
+  }
+});
 
 entryButton1.forEach(element => element.addEventListener("click", showMenu));
 entrybutton1.forEach(element => element.addEventListener("click", showMenu));

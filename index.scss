@@ -1621,6 +1621,12 @@ textarea {
     margin-block-end: 32px;
   }
 
+  .title-2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
   .menu {
     width: 100%;
     --webkit-overflow-scrolling: hidden;
