@@ -243,10 +243,8 @@ button {
   border-radius: var(--border-radius);
 }
 
-
-dialog {
-  position: relative;
-  z-index: 0;
+.wrapper{
+  overflow: auto;
 }
 
 .wrapper_content {
@@ -1685,6 +1683,7 @@ textarea {
 
 @media(min-width:1024px) {
 
+
   .footer-2 {
     margin-inline: 31px;
     margin-block: 32px;
@@ -1992,7 +1991,6 @@ textarea {
     margin-block: 42px 8px;
     margin-inline-start: 2px;
     margin-inline-end: 30px;
-    
   }
 
   .menu__line {
