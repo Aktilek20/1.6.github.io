@@ -18,9 +18,9 @@ const showSideMenu = () => {
     } else {
       entryDisplay[0].classList.add("show");
       entryDisplay[0].style.display = 'block';
-      filter3.forEach(filter => filter.style.filter = 'blur(1px)');
-      filter1.forEach(filter => filter.style.filter = 'blur(1px)');
-      filter4.forEach(filter => filter.style.filter = 'blur(1px)');
+      filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+      filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+      filter4.forEach(filter => filter.style.filter = 'blur(5px)');
 
       document.querySelectorAll('.entryDisplay1').forEach(block => block.classList.remove('show1'));
       document.querySelectorAll('.entryDisplay1').forEach(block => block.style.display = 'none');
@@ -46,9 +46,9 @@ const showMenu = () => {
     } else {
       entryDisplay1[0].classList.add("show1");
       entryDisplay1[0].style.display = 'block';
-      filter3.forEach(filter => filter.style.filter = 'blur(1px)');
-      filter1.forEach(filter => filter.style.filter = 'blur(1px)');
-      filter4.forEach(filter => filter.style.filter = 'blur(1px)');
+      filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+      filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+      filter4.forEach(filter => filter.style.filter = 'blur(5px)');
 
       document.querySelectorAll('.entryDisplay').forEach(block => block.classList.remove('show'));
       document.querySelectorAll('.entryDisplay').forEach(block => block.style.display = 'none');
@@ -85,9 +85,9 @@ const showRightMenu = () => {
   entryDisplay1[0].classList.toggle("show");
   if (entryDisplay1[0].classList.contains("show")) {
     entryDisplay1[0].style.display = 'block';
-    filter3.forEach(filter => filter.style.filter = 'blur(1px)');
-    filter1.forEach(filter => filter.style.filter = 'blur(1px)');
-    filter4.forEach(filter => filter.style.filter = 'blur(1px)');
+    filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+    filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+    filter4.forEach(filter => filter.style.filter = 'blur(5px)');
   } else {
     entryDisplay1[0].style.display = 'none';
     filter3.forEach(filter => filter.style.filter = 'none');
@@ -98,9 +98,9 @@ const showRightMenu = () => {
   entryDisplay[0].classList.toggle("show1");
   if (entryDisplay[0].classList.contains("show1")) {
     entryDisplay[0].style.display = 'block';
-    filter3.forEach(filter => filter.style.filter = 'blur(1px)');
-    filter1.forEach(filter => filter.style.filter = 'blur(1px)');
-    filter4.forEach(filter => filter.style.filter = 'blur(1px)');
+    filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+    filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+    filter4.forEach(filter => filter.style.filter = 'blur(5px)');
   } else {
     entryDisplay[0].style.display = 'none';
     filter3.forEach(filter => filter.style.filter = 'none');

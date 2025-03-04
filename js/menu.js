@@ -12,17 +12,17 @@ const applyFilter = (elements, filterValue) => {
 menu.onclick = () => {
   menu.classList.toggle('clicked');
   navbar.classList.toggle('show3');
-  applyFilter(filter3, 'blur(1px)');
-  applyFilter(filter1, 'blur(1px)');
-  applyFilter(filter4, 'blur(1px)');
+  filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+  filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+  filter4.forEach(filter => filter.style.filter = 'blur(5px)');
 };
 
 menu2.onclick = () => {
   menu2.classList.toggle('clicked1');
   navbar.classList.toggle('show3');
-  applyFilter(filter3, 'none');
-  applyFilter(filter1, 'none');
-  applyFilter(filter4, 'none');
+  filter3.forEach(filter => filter.style.filter = 'blur(5px)');
+  filter1.forEach(filter => filter.style.filter = 'blur(5px)');
+  filter4.forEach(filter => filter.style.filter = 'blur(5px)');
 };
 
 

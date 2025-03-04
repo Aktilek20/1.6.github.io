@@ -256,6 +256,7 @@ dialog {
   top: -42px;
   z-index: 3;
   overflow-y: hidden;
+  height: 1925vh;
 }
 
 .icon-4 {
@@ -1798,6 +1799,7 @@ textarea {
     justify-content: space-between;
     margin-block: 42px 8px;
     margin-inline-start: 2px;
+    margin-inline-end: 30px;
   }
   .menu__line {
     display: none;
@@ -2077,10 +2079,10 @@ textarea {
   }
   .content {
     display: flex;
-    justify-content: normal;
+    justify-content: space-between;
     margin-block: 42px 8px;
     margin-inline-start: 2px;
-    gap: 355px;
+    margin-inline-end: 30px;
   }
   .menu__line {
     display: none;
@@ -2105,6 +2107,9 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
+  .menu__wrapper {
+    padding-inline-start: 34px;
+  }
   .footer-2 {
     margin-inline: 31px;
     margin-block: 32px;
@@ -2174,8 +2179,7 @@ textarea {
   }
   .menu {
     --webkit-scrolling-touching: hidden;
-    width: 100%;
-    margin-inline-start: 34px;
+    margin-inline-start: 0px;
   }
   .header-2 {
     margin-block: 30px 37px;
@@ -2370,10 +2374,10 @@ textarea {
   }
   .content {
     display: flex;
-    justify-content: normal;
+    justify-content: space-between;
     margin-block: 42px 8px;
     margin-inline-start: 2px;
-    gap: 449px;
+    margin-inline-end: 30px;
   }
   .menu__line {
     display: none;
