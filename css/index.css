@@ -977,6 +977,8 @@ input {
 
 .entryDisplay1.show1 {
   opacity: 1;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .input-1 {
