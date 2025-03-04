@@ -1,11 +1,8 @@
-import { navbar, menu, filter3, filter1, filter4 } from './menu.js';
+import { navbar, filter3, filter1, filter4 } from './menu.js';
 
 const entryButton = document.querySelectorAll(".entry-button");
 const entryDisplay = document.querySelectorAll(".entryDisplay");
 const entrybutton = document.querySelectorAll(".entrybutton");
-const container = document.querySelectorAll(".filter");
-const container1 = document.querySelectorAll(".filter2");
-const container4 = document.querySelectorAll(".filter3");
 
 const showSideMenu = () => {
   requestAnimationFrame(() => {
@@ -22,7 +19,7 @@ const showSideMenu = () => {
       filter1.forEach(filter => filter.style.filter = 'blur(5px)');
       filter4.forEach(filter => filter.style.filter = 'blur(5px)');
 
-      document.querySelectorAll('.entryDisplay1').forEach(block => block.classList.remove('show1'));
+      document.querySelectorAll('.entryDisplay1').forEach(block => block.classList.remove('show'));
       document.querySelectorAll('.entryDisplay1').forEach(block => block.style.display = 'none');
     }
   });
@@ -58,29 +55,12 @@ const showMenu = () => {
 
 
 
-document.addEventListener('click', (event) => {
-  if (!event.target.closest('.entryDisplay') && !event.target.closest('.entryDisplay1') && !event.target.closest('.entry-button') && !event.target.closest('.entry__button2')) {
-    document.querySelectorAll('.entryDisplay').forEach(block => {
-      block.classList.remove('show');
-      block.style.display = 'none';
-    });
-    document.querySelectorAll('.entryDisplay1').forEach(block => {
-      block.classList.remove('show1');
-      block.style.display = ('none');
-    });
-
-    filter3.forEach(filter => filter.style.filter = 'none');
-    filter1.forEach(filter => filter.style.filter = 'none');
-    filter4.forEach(filter => filter.style.filter = 'none');
-  }
-});
 
 entryButton1.forEach(element => element.addEventListener("click", showMenu));
 entrybutton1.forEach(element => element.addEventListener("click", showMenu));
 
 const showRightMenu = () => {
   navbar.classList.remove('show3');
-  menu.classList.remove('clicked');
 
   entryDisplay1[0].classList.toggle("show");
   if (entryDisplay1[0].classList.contains("show")) {

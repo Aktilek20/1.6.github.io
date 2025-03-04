@@ -4,26 +4,33 @@ export const menu2 = document.getElementById("menu-button-2");
 export const filter3 = document.querySelectorAll(".filter");
 export const filter1 = document.querySelectorAll(".filter2");
 export const filter4 = document.querySelectorAll(".filter3");
+ const filter = document.querySelectorAll(".filter");
+ const filter2 = document.querySelectorAll(".filter2");
+ const filter5 = document.querySelectorAll(".filter3");
 
-const applyFilter = (elements, filterValue) => {
-  elements.forEach(element => element.style.filter = filterValue);
-};
 
 menu.onclick = () => {
-  menu.classList.toggle('clicked');
   navbar.classList.toggle('show3');
-  filter3.forEach(filter => filter.style.filter = 'blur(5px)');
-  filter1.forEach(filter => filter.style.filter = 'blur(5px)');
-  filter4.forEach(filter => filter.style.filter = 'blur(5px)');
+  toggleBlur();
 };
 
 menu2.onclick = () => {
-  menu2.classList.toggle('clicked1');
   navbar.classList.toggle('show3');
-  filter3.forEach(filter => filter.style.filter = 'blur(5px)');
-  filter1.forEach(filter => filter.style.filter = 'blur(5px)');
-  filter4.forEach(filter => filter.style.filter = 'blur(5px)');
+  toggleBlur(); 
 };
 
+function toggleBlur() {
+  filter.forEach(element => element.classList.toggle('filter-blur'));
+  filter2.forEach(element => element.classList.toggle('filter-blur'));
+  filter5.forEach(element => element.classList.toggle('filter-blur'));
+}
 
 
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('#menu-button') && !event.target.closest('#menu-button-2') && !event.target.closest('.container')) {
+      navbar.classList.remove('show3');
+      filter.forEach(element => element.classList.remove('filter-blur'));
+      filter2.forEach(element => element.classList.remove('filter-blur'));
+      filter5.forEach(element => element.classList.remove('filter-blur'));
+  }
+});
