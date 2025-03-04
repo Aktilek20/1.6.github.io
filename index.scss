@@ -903,6 +903,8 @@ button {
 
 .entryDisplay.show {
   opacity: 1;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .section__title-1 {
